@@ -1,80 +1,138 @@
 # Smart Classroom Management System
 
-A modern classroom management application built with React and TypeScript.
+A comprehensive classroom management web application built with Next.js, React, and TypeScript. This system provides educators and administrators with powerful tools to manage classrooms, faculty, subjects, timetables, and student activities efficiently.
 
-## Project Overview
+## 📋 Project Overview
 
-This Smart Classroom Management System provides tools for managing classroom schedules, timetables, and educational activities. It features a clean, responsive interface designed to help educators and students organize their academic activities efficiently.
+The Smart Classroom Management System is designed to streamline educational administration through an intuitive, modern interface. It offers complete classroom management capabilities including user authentication, dashboard analytics, faculty management, subject organization, and automated timetable generation.
 
-## How to run this project
+## ✨ Key Features
 
-Follow these steps to set up and run the project locally:
+- **🔐 Authentication System** - Secure sign-in and sign-up functionality
+- **📊 Dashboard Overview** - Comprehensive analytics and quick access to key metrics
+- **🏫 Classroom Management** - Create, edit, and manage classroom information
+- **👨‍🏫 Faculty Management** - Maintain faculty profiles and assignments
+- **📚 Subject Management** - Organize subjects and course information
+- **📅 Timetable Generator** - Automated timetable creation and management
+- **📝 Data Input Forms** - Streamlined data entry and validation
+- **✅ Review & Approval System** - Workflow for content review and approval
+- **📱 Responsive Design** - Optimized for desktop, tablet, and mobile devices
+- **🎨 Modern UI** - Clean, accessible interface built with shadcn/ui components
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Next.js 14](https://nextjs.org/) - React framework with App Router
+- **Language:** [TypeScript](https://www.typescriptlang.org/) - Type-safe JavaScript
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- **UI Components:** [shadcn/ui](https://ui.shadcn.com/) - Modern, accessible component library
+- **Icons:** [Lucide React](https://lucide.dev/) - Beautiful, customizable icons
+- **Forms:** [React Hook Form](https://react-hook-form.com/) + [Zod](https://zod.dev/) - Form handling and validation
+- **Charts:** [Recharts](https://recharts.org/) - Data visualization
+- **Theme:** [next-themes](https://github.com/pacocoursey/next-themes) - Dark/light mode support
+- **Package Manager:** [pnpm](https://pnpm.io/) - Fast, disk space efficient
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
-Make sure you have Node.js & npm installed.
+Ensure you have the following installed:
 
-### Installation
+- [Node.js](https://nodejs.org/) (version 18 or higher)
+- [pnpm](https://pnpm.io/) (recommended) or npm/yarn
 
-```sh
-# Step 1: Clone the repository
-git clone <YOUR_GIT_URL>
+### Installation & Setup
 
-# Step 2: Navigate to the project directory
-cd smart_classroom
+1. **Clone the repository**
 
-# Step 3: Navigate to the frontend directory
-cd frontend
+   ```bash
+   git clone <YOUR_GIT_URL>
+   cd smart_classroom
+   ```
 
-# Step 4: Install the necessary dependencies
-npm i
+2. **Install dependencies**
 
-# Step 5: Start the development server with auto-reloading and an instant preview
-npm run dev
-```
+   ```bash
+   pnpm install
+   # or
+   npm install
+   ```
 
-## Technologies Used
+3. **Start the development server**
 
-This project is built with modern web technologies:
+   ```bash
+   pnpm dev
+   # or
+   npm run dev
+   ```
 
-- **Vite** - Fast build tool and development server
-- **TypeScript** - Type-safe JavaScript
-- **React** - Component-based UI library
-- **shadcn-ui** - Modern UI component library
-- **Tailwind CSS** - Utility-first CSS framework
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000) to view the application.
 
-## Features
+### Available Scripts
 
-- Interactive timetable management
-- Responsive design for desktop and mobile
-- Modern UI components
-- TypeScript for better development experience
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm start` - Start production server
+- `pnpm lint` - Run ESLint for code quality
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 smart_classroom/
-├── frontend/           # Frontend React application
-│   ├── src/
-│   │   ├── components/          # Reusable UI components
-│   │   │   ├── ui/             # Base UI components (shadcn-ui)
-│   │   │   ├── TimetableDisplay.tsx
-│   │   │   └── TimetableForm.tsx
-│   │   ├── pages/              # Application pages
-│   │   │   ├── Dashboard.tsx
-│   │   │   ├── Index.tsx
-│   │   │   ├── Login.tsx
-│   │   │   └── NotFound.tsx
-│   │   ├── hooks/              # Custom React hooks
-│   │   ├── lib/                # Utility functions
-│   │   └── assets/             # Static assets
-│   ├── public/                 # Static public files
-│   ├── index.html              # Main HTML template
-│   ├── package.json            # Frontend dependencies
-│   └── vite.config.ts          # Vite configuration
-├── backend/            # Backend services (if any)
-└── README.md           # Project documentation
+├── app/                    # Next.js App Router pages
+│   ├── auth/              # Authentication pages
+│   ├── dashboard/         # Dashboard and main app pages
+│   ├── globals.css        # Global styles
+│   ├── layout.tsx         # Root layout
+│   └── page.jsx           # Home page
+├── components/            # Reusable React components
+│   ├── ui/               # shadcn/ui components
+│   └── ...               # Custom components
+├── hooks/                # Custom React hooks
+├── lib/                  # Utility functions and configurations
+├── public/               # Static assets
+└── styles/               # Additional stylesheets
 ```
+
+## 🎯 Core Modules
+
+### Authentication
+
+- Secure user registration and login
+- Protected routes and session management
+
+### Dashboard
+
+- Overview analytics and key metrics
+- Quick navigation to all system modules
+
+### Classroom Management
+
+- Create and manage classroom information
+- Track capacity, equipment, and availability
+
+### Faculty Management
+
+- Maintain faculty profiles and contact information
+- Assign subjects and track teaching loads
+
+### Subject Management
+
+- Organize academic subjects and courses
+- Manage prerequisites and credit hours
+
+### Timetable Generation
+
+- Automated schedule creation
+- Conflict detection and resolution
+- Export capabilities
+
+### Data Input & Review
+
+- Streamlined data entry forms
+- Validation and error handling
+- Review and approval workflows
+- TypeScript for better development experience
 
 ## Development
 
